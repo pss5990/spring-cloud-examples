@@ -1,0 +1,7 @@
+server:
+  port: 8080
+  url: http://simple-server/server/hello
+
+spring:
+  application:
+    name: simple-client

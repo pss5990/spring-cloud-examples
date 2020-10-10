@@ -1,0 +1,20 @@
+server:
+  port: 9080
+
+zuul:
+  routes:
+    client:
+      path: /app1/**
+      serviceId: simple-client
+    server:
+      path: /app2/**
+      serviceId: simple-server
+
+spring:
+  application:
+    name: zuul-proxy
+
+##Changing the timeouts as the default timeout is very less (1sec I think)
+ribbon:
+  ReadTimeout: 3000
+  SocketTimeout: 3000
