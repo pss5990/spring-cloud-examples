@@ -1,0 +1,5 @@
+server:
+  port: ${simple-server.application.port}
+spring:
+  application:
+    name: simple-server

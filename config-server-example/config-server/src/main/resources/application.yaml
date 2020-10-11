@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:pss5990/spring-cloud-examples.git
+          searchPaths: "config-server-example/configurations-repo"
+          # We can use http protocol as well to connect details below
+          #uri: https://github.com/pss5990/spring-cloud-examples.git
+          #username: <githubUsername>
+          #password: <PASSWORD>

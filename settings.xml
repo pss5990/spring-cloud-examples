@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+<!-- Created this file just to override my default maven settings (that has our internal nexus links) for the demo purposes, the file is mostly blank except the localRepo section, Ideally you dont need to pass in this file as an argument to the maven command, but if you do want to for some reason, change the localRepo atttribute to desired localRepo section -->
+
+<localRepository>/Users/prasingh3/demoRepo/repository</localRepository>
+<pluginGroups></pluginGroups>
+<proxies></proxies>
+<servers></servers>
+    <mirrors>
+        <mirror>
+            <id>mirror</id>
+            <mirrorOf>central</mirrorOf>
+            <url>https://repo1.maven.org/maven2/</url>
+        </mirror>
+    </mirrors>
+<profiles></profiles>
+
+</settings>
